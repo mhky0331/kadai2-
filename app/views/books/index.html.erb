@@ -1,0 +1,17 @@
+<h1>Books</h1>
+
+<% @books.each do |book| %>
+
+  <p>Title</p>
+  <span><%= book.title %></span>
+
+  <p>Body</p>
+  <span><%= book.body %></span>
+
+<a class="show_1" href="/books/1">Show</a>
+
+<a class="edit_1" href="/books/1/edit">Edit</a>
+
+<a data-confirm="Are you sure?" class="destroy_1" rel="nofollow" data-method="delete" href="/books/1">Destroy</a>
+
+<% end %>
